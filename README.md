@@ -3,6 +3,8 @@ PyAutoGUI adalah modul Python yang digunakan untuk mengotomatiskan tugas-tugas p
 
 Cara implementasi pada pekerjaan di BPS (contoh: profilling SBR dan approve admin di fasih-sm)
 
+#Step0 - install python dan pip di laptop/PC
+
 #Step1 - Cek Pointer
 Lakukan tugas secara manual (kontrol manusia) sambil catat setiap koordinat tombol x dan y nya, run file cekpointer.py di terminal.
 Kemudian ubah koordinat2nya di file run-profiling-matchapro.py (ini dilakukan karena resolusi setiap PC/Laptop berbeda2)
