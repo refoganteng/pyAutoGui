@@ -1,12 +1,13 @@
 import pyautogui
 import time
 
-DELAY = 2  
+DELAY = 1.5 
 JEDA_AWAL = 5  
-ULANG = 1  # jumlah pengulangan per batch
-BATCH = 1  # jumlah looping luar
+ULANG = 50  # jumlah pengulangan per batch
+BATCH = 2  # jumlah looping luar
 
 def klik(x, y):
+    
     pyautogui.click(x, y)
     time.sleep(DELAY)
 
@@ -31,15 +32,15 @@ for batch in range(BATCH):  # looping luar
     for i in range(ULANG):  # looping dalam
         time.sleep(DELAY-1)
         pyautogui.press('tab')
-        pyautogui.press('tab')  
+        pyautogui.press('tab')      
         pyautogui.press('enter')  
         time.sleep(DELAY)
 
         pyautogui.press('enter')
         time.sleep(DELAY)
-        klik(961, 965)
+        klik(970, 875)
         time.sleep(DELAY)
-        klik(961, 965)  # centang email
+        klik(970, 875)  # centang email
 
         scroll_ke_bawah()
         klik(1044, 855) 
@@ -47,8 +48,9 @@ for batch in range(BATCH):  # looping luar
         pyautogui.press('tab')
         pyautogui.hotkey('command', 'v')
 
-        scroll_ke_atas()
-        klik(1763, 240)
+        scroll_ke_atas()    
+        
+        klik(1815, 215) #tombol submit
         pyautogui.press('enter') 
         
         time.sleep(DELAY-1)
@@ -59,11 +61,11 @@ for batch in range(BATCH):  # looping luar
 
     # Aksi tambahan setelah selesai 50 kali (setiap batch)
     scroll_ke_atas()
-    klik(1767, 735)
+    klik(1783, 692) #tombol filter
     print(f"🔄 Batch {batch+1} selesai, aksi tambahan sudah dilakukan")
-    time.sleep(DELAY+2) 
+    time.sleep(DELAY+10) 
     
 
 
 
-    # tidak mengubah informasi apapun karena tidak diketahui informasi lanjutan terkait usaha ini
+    #   tidak mengubah informasi apapun karena tidak diketahui informasi lanjutan terkait usaha ini

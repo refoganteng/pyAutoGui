@@ -15,7 +15,8 @@ time.sleep(JEDA_AWAL)
 
 for i in range(ULANG):  # looping dalam
         time.sleep(DELAY-1)
-        klik(1802, 347)
+        klik(1820, 397
+             )
         pyautogui.press('enter')
         time.sleep(DELAY)
         pyautogui.press('enter')
