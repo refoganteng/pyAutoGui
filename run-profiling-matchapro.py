@@ -3,8 +3,10 @@ import time
 
 DELAY = 1.5 
 JEDA_AWAL = 5  
-ULANG = 50  # jumlah pengulangan per batch
-BATCH = 2  # jumlah looping luar
+ULANG = 40
+  # jumlah pengulangan per batch
+BATCH = 4
+  # jumlah looping luar
 
 def klik(x, y):
     
@@ -43,13 +45,13 @@ for batch in range(BATCH):  # looping luar
         klik(970, 875)  # centang email
 
         scroll_ke_bawah()
-        klik(1044, 855) 
+        klik(1044, 855) # sumber
         ketik("-")
         pyautogui.press('tab')
+         # { copy catatan ini } tidak mengubah informasi apapun karena tidak diketahui informasi lanjutan terkait usaha ini
         pyautogui.hotkey('command', 'v')
 
         scroll_ke_atas()    
-        
         klik(1815, 215) #tombol submit
         pyautogui.press('enter') 
         
@@ -68,4 +70,4 @@ for batch in range(BATCH):  # looping luar
 
 
 
-    #   tidak mengubah informasi apapun karena tidak diketahui informasi lanjutan terkait usaha ini
+   

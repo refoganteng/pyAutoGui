@@ -9,4 +9,4 @@ while True:
     print(f"X: {x} Y: {y}", end="\r")  # \r biar tetap di 1 baris
     time.sleep(0.1)
 
-                
+            
